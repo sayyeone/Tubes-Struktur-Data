@@ -16,10 +16,10 @@ struct dosen {
     string keahlian;
 };
 
-typedef dosen infotype_dosen;
-typedef struct elmlist_dosen *address_dosen;
+typedef dosen infotype_dosen; 
+typedef struct elmlist_dosen *address_dosen; 
 
-struct elmlist_dosen {
+struct elmlist_dosen { 
     infotype_dosen info;
     address_dosen next;
     address_dosen prev;
@@ -36,7 +36,6 @@ void dealokasi_dosen(address_dosen &P);
 
 void insertLast(List_dosen &L, address_dosen P);
 void deleteFirst(List_dosen &L, address_dosen &P);
-void deleteLast(List_dosen &L, address_dosen &P);
 void deleteAfter(List_dosen &L, address_dosen Prec, address_dosen &P);
 
 address_dosen findElmDosen(List_dosen L, string nama);

@@ -45,19 +45,6 @@ void deleteFirst(List_dosen &L, address_dosen &P) {
     }
 }
 
-void deleteLast(List_dosen &L, address_dosen &P) {
-    if(first(L) != NULL) {
-        P = last(L);
-        if(first(L) == last(L)) {
-            first(L) = NULL;
-            last(L) = NULL;
-        } else {
-            last(L) = prev(P);
-            next(last(L)) = NULL;
-            prev(P) = NULL;
-        }
-    }
-}
 
 void deleteAfter(List_dosen &L, address_dosen Prec, address_dosen &P) {
     if(Prec != NULL && next(Prec) != NULL) {
