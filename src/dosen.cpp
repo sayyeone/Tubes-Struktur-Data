@@ -16,7 +16,7 @@ address_dosen alokasi_dosen(string nama, string nip, string keahlian) {
 }
 
 void dealokasi_dosen(address_dosen &P) {
-    delete P;
+    delete P; // Menghapus elemen dari memori
     P = NULL;
 }
 
